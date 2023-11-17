@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Mental Health Journal</title>
+	</head>
+	<body>
+		<header>
+			<h1>MoodBoard: A Mental Health Journal</h1>
+		</header>
+
+		<main>
+			<div id="calendar-container">
+				<div id="calendar-header">
+					<button id="prev-month" class="butts">Prev</button>
+					<h2 id="month-year">Month Year</h2>
+					<button id="next-month" class="butts">Next</button>
+				</div>
+				<div id="calendar-grid">
+					<div class="day-heading">Mon</div>
+					<div class="day-heading">Tue</div>
+					<div class="day-heading">Wed</div>
+					<div class="day-heading">Thu</div>
+					<div class="day-heading">Fri</div>
+					<div class="day-heading">Sat</div>
+					<div class="day-heading">Sun</div>
+				</div>
+			</div>
+			<div id="emoji-selector-container">
+				<label for="emoji-selector">Select Emoji: </label>
+				<select id="emoji-selector">
+					<option value="😭">😭</option>
+					<option value="☹️">☹️</option>
+					<option value="😐">😐</option>
+					<option value="😊">😊</option>
+					<option value="😍">😍</option>
+				</select>
+			</div>
+			<div id="text-entry-container">
+				<label for="textarea-input">Enter Diary Entry: </label>
+                <br>
+				<textarea id="textarea-input"></textarea>
+			</div>
+			<button class="butts" id="save-button">Save</button>
+			<button class="butts" id="reset-button">Reset all data</button>
+		</main>
+
+		<script src="script.js"></script>
+	</body>
+</html>

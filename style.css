@@ -1,0 +1,115 @@
+header h1{
+    text-align: center;
+    color: #333;
+}
+body {
+    background-color: #ffffd0; /* Light pastel color */
+}
+
+#calendar-container {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.day-heading {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #fff9a4;
+}
+
+
+.calendar-day {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.today {
+    background-color: #aaf;
+}
+
+.selected {
+    background-color: #5af;
+}
+
+
+/* Add styling for the emoji selector container */
+#emoji-selector-container {
+    margin-bottom: 10px;
+}
+
+/* Style the emoji selector */
+#emoji-selector {
+    font-size: 28px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style the text entry container */
+#text-entry-container {
+    margin-bottom: 10px;
+}
+
+/* Style the textarea */
+#textarea-input {
+    width: 98%;
+    height: 80px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none; /* Prevent resizing of textarea */
+}
+
+/* Style the save button */
+.butts {
+    padding: 8px 16px;
+    background-color: #fff34b;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Change button color on hover */
+.butts:hover {
+    background-color: rgb(235, 55, 55);
+    color: white;
+}
+.calendar-day span{
+    font-size: 32px;
+}
+
+@media only screen and (max-width: 550px) {
+    #calendar-grid {
+        grid-template-columns: repeat(7, 1fr);
+        gap: 1px;
+    }
+
+    .calendar-day {
+        font-size: 8px;
+    }
+
+    .day-heading {
+        font-size: 12px;
+    }
+    .calendar-day span{
+        font-size: 20px;
+    }
+}
